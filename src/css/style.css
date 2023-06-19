@@ -1,0 +1,226 @@
+/* ========== Start Variables ========== */
+:root {
+  --primary: #4761ff;
+  --secondary: #555555;
+  --light: #f1f3fa;
+  --dark: #1c2035;
+}
+/* ========== End Variables ========== */
+
+/* ========== Start Global Rules ========== */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-thumb {
+  /* background-color: rgb(0, 117, 255); */
+  border-radius: 2px;
+}
+::selection {
+  background-color: #31dcce;
+  color: #333;
+}
+::placeholder {
+  /* color: #00000091; */
+  /* color: #B0B9AE; */
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+/* == buttons == */
+.btn {
+  transition: .5s;
+  font-weight: 500;
+}
+.btn-primary,
+.btn-outline-primary:hover {
+  color: var(--light);
+}
+.btn-secondary,
+.btn-outline-secondary:hover {
+  color: var(--dark);
+}
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ========== End Global Rules ========== */
+
+/* ========== Start NavBar ========== */
+.navbar .navbar-nav .nav-link {
+  margin-right: 35px;
+  padding: 25px 0;
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    margin-top: 15px;
+    border-top: 1px solid #eeeeee;
+  }
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+.navbar .logo h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+/* ========== End NavBar ========== */
+
+/* ========== Start Hero ========== */
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 3.5rem;
+  background-color: var(--primary);
+  border: 15px solid var(--primary);
+}
+@media (max-width: 768px) {
+  .carousel-item {
+      position: relative;
+      min-height: 450px;
+  }
+  .carousel-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('../assets/img/carousel-2.jpg') center center no-repeat;
+  background-size: cover;
+}
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--light);
+}
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a {
+  font-size: 18px;
+  color: var(--light);
+}
+/* ========== End Hero ========== */
+
+/* ========== Start Features ========== */
+.feature-row {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+.feature-item {
+  border-color: rgba(0, 0, 0, .03) !important;
+}
+/* ========== Start Footer ========== */
+/*** Footer ***/
+.footer {
+  color: #B0B9AE;
+  background-color: #1C2035 !important;
+}
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #B0B9AE;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+  text-decoration: none;
+}
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.footer .btn.btn-link:hover {
+  color: var(--light);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+.footer .form-control::placeholder {
+  color: #B0B9AE;
+}
+.copyright {
+  color: #B0B9AE;
+}
+.copyright {
+  background: #111111;
+}
+.copyright a:hover {
+  color: var(--primary) !important;
+}
+/* ========== End Footer ========== */
