@@ -21,15 +21,3 @@ Follow the steps below to get started with This Digital Marketing Template:
 3. Customize and enhance the template according to your specific needs.
 4. Run the project locally using `npm start` and test it in your preferred browser.
 5. Deploy the project to your desired hosting platform for production use.
-
-## License
-
-This project is licensed under the [HTML Codex License](https://htmlcodex.com/license/), which allows you to use, modify, and distribute the code for both personal and commercial purposes.
-
-
-## Contact
-
-If you have any questions, suggestions, or feedback, please feel free to reach out to us:
-
-- Email: [itsmehaassaann@gmail.com](mailto:itsmehaassaann@gmail.com)
-- WhatsApp: [+212 766447420](https://wa.me/1234567890)
